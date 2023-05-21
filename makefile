@@ -1,11 +1,11 @@
 CC=clang
-INC=-I./include/ -I/usr/include -I/usr/local/include/
-LIB=-lglfw -lpthread -lXrandr -ldl -lm
+INC=-Iinclude
+LIB=-Llib -lglfw3 -lpthread -ldl -lcglm -lm
 
 CFLAGS=-std=c99
 
-SRC=main.c glad.c file.c texture.c
-OBJ=main.o glad.o file.o texture.o
+SRC=main.c glad.c file.c texture.c sprite.c shader.c
+OBJ=main.o glad.o file.o texture.o sprite.o shader.o
 
 BIN=banana_rotate
 
