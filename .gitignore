@@ -1,3 +1,4 @@
-.cache/
+build/
+filesystem/
 *.json
-banana_rotate
+*.z64
